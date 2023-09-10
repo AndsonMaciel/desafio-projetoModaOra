@@ -1,1 +1,126 @@
-/* Escreva aqui as suas folhas de estilo */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Viaoda+Libre&display=swap');
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    height: 700px;
+    background-image: url(../imagens/topo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #162028;
+}
+
+.hero-content__title {
+    color: white;
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 40px;
+    margin: 0 150px 0;
+}
+
+.hero-content__menu .menu__items {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    margin: 0 50px;
+}
+
+.menu__items a {
+    display: block;
+    text-decoration: none;
+    padding: 16px;
+    text-transform: uppercase;
+    color: #425564;
+    letter-spacing: 3px;
+}
+
+.hero-container__center {
+    text-align: center;
+    color: #555;
+    padding: 100px 0 50px;
+}
+
+.container-title__center {
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+.hero-container__center .container-content__center {
+    line-height: 1.8;
+    margin: auto 280px;
+}
+
+.hero-container__img {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 960px;
+    gap: 16px;
+    margin: 50px auto;
+    padding: 16px;
+
+}
+
+.hero-container__img img {
+    flex-basis: 280px;
+    display: block;
+}
+
+.hero-container__img h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-container__bottom {
+    height: 500px;
+    color: white;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-color: #003d52;
+}
+
+.container__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.container-title__bottom {
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.container-content__bottom {
+    width: 60%;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.hero-rodape {
+    background-color: #0b171f;
+    color: #6f8597;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px black;
+}
