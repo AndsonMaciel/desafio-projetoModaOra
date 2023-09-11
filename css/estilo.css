@@ -1,126 +1,115 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Viaoda+Libre&display=swap');
-
-html,
-body {
-    min-height: 100%;
+:root {
+    --large-default-padding: 6.5em;
+    --medium-default-padding: 4em;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
+body{
+    font-family: 'Roboto', tahoma, arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.hero {
-    height: 700px;
-    background-image: url(../imagens/topo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+#principal{
+    width: 64em;
+    margin: 1.25em auto;
 }
 
-.hero-content {
+h1,h2{
+    font-family: 'Viaoda Libre', cursive;
+    font-weight: normal;
+}
+
+.header-top{
+    background: #162028;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #162028;
 }
 
-.hero-content__title {
+.logotipo{
+    margin: .5em 0 .5em 8.4375em;
     color: white;
-    font-family: 'Viaoda Libre', cursive;
-    font-size: 40px;
-    margin: 0 150px 0;
 }
 
-.hero-content__menu .menu__items {
+.header-nav li{
     list-style-type: none;
-    display: flex;
-    gap: 30px;
-    margin: 0 50px;
+    display: inline-block;
+    margin: 0 1em 0 0;
+    padding: 1em;
 }
 
-.menu__items a {
-    display: block;
-    text-decoration: none;
-    padding: 16px;
-    text-transform: uppercase;
+.header-nav a{
     color: #425564;
-    letter-spacing: 3px;
-}
-
-.hero-container__center {
-    text-align: center;
-    color: #555;
-    padding: 100px 0 50px;
-}
-
-.container-title__center {
-    font-family: 'Viaoda Libre', cursive;
-    font-size: 34px;
-    letter-spacing: 1px;
-}
-
-.hero-container__center .container-content__center {
-    line-height: 1.8;
-    margin: auto 280px;
-}
-
-.hero-container__img {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    max-width: 960px;
-    gap: 16px;
-    margin: 50px auto;
-    padding: 16px;
-
-}
-
-.hero-container__img img {
-    flex-basis: 280px;
-    display: block;
-}
-
-.hero-container__img h3 {
+    text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: .8em;
+    letter-spacing: .15em;
+    transition: color 0.3s linear;
 }
 
-.hero-container__bottom {
-    height: 500px;
-    color: white;
-    background-image: url(../imagens/bg_detalhe.png);
-    background-position: right bottom;
-    background-repeat: no-repeat;
+.header-nav a:hover{
+    color:white;
+}
+
+.portifolio{
+    padding: var(--medium-default-padding) var(--large-default-padding);
+    text-align: center;
+}
+
+.portifolio h1{
+    font-size: 2.25em;
+    text-align: center;
+}
+
+.portifolio p{
+    font-size: 1em;
+    line-height: 2;
+    color: #252525;
+}
+
+.gallery{
+    color:#555;
+    padding: 0 var(--large-default-padding) var(--medium-default-padding);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.gallery-cards{
+    text-align: center;
+}
+
+.gallery-title{
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.about{
     background-color: #003d52;
+    padding: var(--large-default-padding);
+    color:white;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
-.container__bottom {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: auto;
-}
-
-.container-title__bottom {
-    font-family: 'Viaoda Libre', cursive;
-    font-size: 34px;
+.about h2{
     text-transform: uppercase;
-    letter-spacing: 3px;
+    font-size: 3em;
+    font-weight: normal;
 }
 
-.container-content__bottom {
-    width: 60%;
-    letter-spacing: 1px;
+.about p{
     line-height: 1.5;
+    width: 70%;
 }
 
-.hero-rodape {
+.rodape{
     background-color: #0b171f;
+    padding: 1.8em;
+    font-size: 0.75em;
     color: #6f8597;
-    padding: 20px;
+    letter-spacing: .3em;
     text-align: center;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 2px black;
-} */
+}
